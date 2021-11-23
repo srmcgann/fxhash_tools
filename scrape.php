@@ -5,7 +5,7 @@ function add_hashmark($n){
   return '#' . $n;
 }
 error_reporting(E_ALL);
-  $user = urlencode('NukCZ');//$_GET['user']);
+  $user = $_GET['user']);
   if($user){
     $url = str_replace('+', '%20', 'https://www.fxhash.xyz/u/' .$user);
     $data = file_get_contents($url);
